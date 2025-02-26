@@ -43,5 +43,80 @@
         "ai"
     ],
     "author": "Eliza Team",
-    "license": "MIT"
+    "license": "MIT",
+    "agentConfig": {
+        "pluginType": "elizaos:client:1.0.0",
+        "pluginParameters": {
+            "NVIDIA_NIM_ENV": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Environment setting, can be 'production' or 'sandbox'. Default is 'production'."
+            },
+            "NVIDIA_NIM_SPASH": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Boolean flag to enable or disable SPASH. Default is false."
+            },
+            "NVIDIA_NIM_API_KEY": {
+                "type": "string",
+                "minLength": 1,
+                "description": "API key for NVIDIA NIM."
+            },
+            "NVIDIA_NIM_MAX_RETRIES": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Maximum number of retries for requests. Default is '3'."
+            },
+            "NVIDIA_NIM_RETRY_DELAY": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Delay between retries in milliseconds. Default is '1000'."
+            },
+            "NVIDIA_NIM_TIMEOUT": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Request timeout in milliseconds. Default is '5000'."
+            },
+            "NVIDIA_NIM_LOG_LEVEL": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Log level, can be 'error', 'warn', 'info', or 'debug'. Default is 'info'."
+            },
+            "NVIDIA_GRANULAR_LOG": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Boolean flag to enable or disable granular logging. Default is false."
+            },
+            "NVIDIA_OFFTOPIC_SYSTEM": {
+                "type": "string",
+                "minLength": 1,
+                "description": "System message for off-topic analysis. Default message provided."
+            },
+            "NVIDIA_OFFTOPIC_USER": {
+                "type": "string",
+                "minLength": 1,
+                "description": "User prompt for off-topic analysis. Default prompt provided."
+            },
+            "NVIDIA_NIM_BASE_VISION_URL": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Base URL for NVIDIA NIM Vision API. Optional."
+            },
+            "NVIDIA_NIM_BASE_URL": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Base URL for NVIDIA NIM API. Optional."
+            },
+            "NVIDIA_COSMOS_INVOKE_URL": {
+                "type": "string",
+                "minLength": 1,
+                "description": "URL to invoke NVIDIA Cosmos services. Optional."
+            },
+            "NVIDIA_COSMOS_ASSET_URL": {
+                "type": "string",
+                "minLength": 1,
+                "description": "URL for NVIDIA Cosmos assets. Optional."
+            }
+        }
+    }
 }
